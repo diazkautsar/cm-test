@@ -9,7 +9,7 @@ function SimpleMap({ lat, lng, _onClick }) {
   return (
     <div style={{ height: '75vh', width: '90%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyAwGI5LWjKbLQvFiX_N7Gp0kjlQxvUzlyE" }}
+        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_KEY }}
         defaultCenter={{
           lat: lat,
           lng: lng
